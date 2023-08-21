@@ -67,9 +67,11 @@ For more details, please refer to the Makefile available at [get_started.md](htt
 
 |                            config                            |                      augmentation                       | Lr schd |  backbone  |  AP  | APs  | Gflops |                             log                              |
 | :----------------------------------------------------------: | :-----------------------------------------------------: | :-----: | :--------: | :--: | :--: | :----: | :----------------------------------------------------------: |
-| [config](https://github.com/lombenick/FuMA/blob/main/configs/fuma/fuma_r50_1x_coco.py) |               random horizontal flipping                |   1x    | ResNet-50  | 42.6 | 25.2 |  104   | [log](https://github.com/lomebenic/FuMA/configs/fuma/fuma_r50_1x_coco.py) |
-| [config](https://github.com/lombenick/FuMA/blob/main/configs/fuma/fuma_r50_300_query_crop_mstrain_480-800_3x_coco.py) | random horizontal flipping, random crop and multi-scale |   3x    | ResNet-50  | 46.7 | 28.8 |  119   | [log](https://github.com/lomebenic/FuMA/configs/fuma/fuma_r50_1x_coco.py) |
-| [config](https://github.com/lombenick/FuMA/blob/main/configs/fuma/fuma_r101_1x_coco.py) |               random horizontal flipping                |   1x    | ResNet-101 | 43.5 | 25.4 |  184   | [log](https://github.com/lomebenic/FuMA/configs/fuma/fuma_r50_1x_coco.py) |
-| [config](https://github.com/lombenick/FuMA/blob/main/configs/fuma/fuma_r101_300_query_crop_mstrain_480-800_3x_coco.py) | random horizontal flipping, random crop and multi-scale |   3x    | ResNet-101 | 47.7 | 29.4 |  198   | [log](https://github.com/lomebenic/FuMA/configs/fuma/fuma_r50_1x_coco.py) |
+|          [config](configs/fuma/fuma_r50_1x_coco.py)          |               random horizontal flipping                |   1x    | ResNet-50  | 42.6 | 25.2 |  104   | [log](logs/FuMA_logs/FuMA_r50_1x_coco/FuMA_r50_1x_coco.log)  |
+| [config](configs/fuma/fuma_r50_300_query_crop_mstrain_480-800_3x_coco.py) | random horizontal flipping, random crop and multi-scale |   3x    | ResNet-50  | 46.7 | 28.8 |  119   | [log](logs/FuMA_logs/FuMA_r50_3x_coco/FuMA_r50_3x_coco.log)  |
+|         [config](configs/fuma/fuma_r101_1x_coco.py)          |               random horizontal flipping                |   1x    | ResNet-101 | 43.5 | 25.4 |  184   | [log](logs/FuMA_logs/FuMA_r101_1x_coco/FuMA_r101_1x_coco.log) |
+| [config](configs/fuma/fuma_r101_300_query_crop_mstrain_480-800_3x_coco.py) | random horizontal flipping, random crop and multi-scale |   3x    | ResNet-101 | 47.7 | 29.4 |  198   | [log](logs/FuMA_logs/FuMA_r101_3x_coco/FuMA_r101_3x_coco.log) |
 
-Exciting new information is coming soon!
+**Note:** The data in the log file originates from the outcomes of a single 3090 GPU, and there could be a variance of up to 0.3 AP compared to the results presented in the paper.
+
+## Exciting new information is coming soon!
